@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+</head>
+{% load static %}
+{% include 'head.html' %}
+<body>
+{% include 'navbar.html' %}
+
+
+<!--========== PROMO BLOCK ==========-->
+
+    <div class="s-promo-block-v1 g-margin-b-30--md">
+        <div class="g-container--md g-text-center--xs g-margin-t-120--xs">
+            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs">TRY SAMPLE IMAGES</p>
+            <h1 class="g-font-size-40--xs g-font-size-50--sm g-color--primary g-letter-spacing--1">Demo</h1>
+        </div>
+        <p class="message"></p>
+
+        <div class="container g-padding-y-60--xs g-margin-t-40--xs g-box-shadow__dark-lightest-v3 g-radius--10">
+            <h1 class="g-font-size-30--xs g-font-size-30--sm text-center g-color--dark g-margin-b-35--xs g-margin-b-50--md">1. Passenger ID Scanner</h1>
+            <div class="row g-overflow--hidden g-padding-x-40--xs">
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 badge-image" src="{% static 'img/badge-samples/badge9.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 badge-image" src="{% static 'img/badge-samples/badge10.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 badge-image" src="{% static 'img/badge-samples/badge7.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 badge-image" src="{% static 'img/badge-samples/badge8.jpg' %}" alt="Image">
+                    </div>
+                </div>
+
+            </div>
+             <div id="badge_results" style="display: none" class="g-container--md g-text-center--xs g-padding-y-20--xs g-margin-t-20--xs">
+                <h1 class="g-font-size-30--xs g-color--primary g-letter-spacing--1"></h1>
+                <p class="g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs"></p>
+            </div>
+        </div>
+        <div class="container g-padding-y-60--xs g-margin-t-40--xs g-box-shadow__dark-lightest-v3 g-radius--10">
+            <h1 class="g-font-size-30--xs g-font-size-30--sm text-center g-color--dark g-margin-b-35--xs g-margin-b-50--md">2. Mask Check</h1>
+            <div class="row g-overflow--hidden g-padding-x-40--xs">
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 ppe-image" src="{% static 'img/mask-samples/img8.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 ppe-image" src="{% static 'img/mask-samples/imgs10.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 ppe-image" src="{% static 'img/mask-samples/img10.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 ppe-image" src="{% static 'img/mask-samples/imgs11.jpg' %}" alt="Image">
+                    </div>
+                </div>
+
+            </div>
+             <div id="ppe_results" style="display: none" class="g-container--md g-text-center--xs g-padding-y-20--xs g-margin-t-20--xs">
+                <h1 class="g-font-size-30--xs g-color--primary g-letter-spacing--1"></h1>
+                <p class="g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs"></p>
+            </div>
+        </div>
+        <div class="container g-padding-y-60--xs g-margin-t-40--xs g-box-shadow__dark-lightest-v3 g-radius--10">
+            <h1 class="g-font-size-30--xs g-font-size-30--sm text-center g-color--dark g-margin-b-35--xs g-margin-b-50--md">2. Gloves Check</h1>
+            <div class="row g-overflow--hidden g-padding-x-40--xs">
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 glove-image" src="{% static 'img/gloves-samples/1.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 glove-image" src="{% static 'img/gloves-samples/2.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 glove-image" src="{% static 'img/gloves-samples/3.jpg' %}" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 col-lg-3 g-full-width--xs g-margin-b-30--xs g-margin-b-0--lg">
+                    <div class="center-block g-width-100-percent--xs">
+                        <img class="img-responsive g-width-100-percent--xs hover g-radius--4 glove-image" src="{% static 'img/gloves-samples/8.jpg' %}" alt="Image">
+                    </div>
+                </div>
+
+            </div>
+             <div id="glove_results" style="display: none" class="g-container--md g-text-center--xs g-padding-y-20--xs g-margin-t-20--xs">
+                <h1 class="g-font-size-30--xs g-color--primary g-letter-spacing--1"></h1>
+                <p class="g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs"></p>
+            </div>
+        </div>
+
+
+    </div>
+<canvas id="canvas" width="480" height="270" style="display: none"></canvas>
+        <!--========== END PROMO BLOCK ==========-->
+{% include 'footer.html' %}
+{% include 'scripts.html' %}
+<script type="text/javascript" src="{% static 'js/ppe.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/glove.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/operate.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/form.js' %}"></script>
+</body>
+</html>

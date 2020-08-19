@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+</head>
+{% load static %}
+{% include 'head.html' %}
+<body>
+{% include 'navbar.html' %}
+
+
+<!--========== PROMO BLOCK ==========-->
+<div class="s-promo-block-v1 g-fullheight--md">
+
+    <div class="container g-ver-center--md g-padding-y-80--xs g-padding-y-100--sm">
+        <div class="row">
+
+            <div class="col-lg-6 col-sm-8 g-hor-centered-row__col g-text-center--xs g-text-left--md g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="s-promo-block-v3 g-margin-b-30--xs g-margin-t-60--xs">
+                        <h1 class="g-font-size-36--xs g-font-size-45--sm g-font-size-55--sm g-font-size-60--lg g-margin-b-40--xs g-color--secondary g-font-weight--600">PassengerCOVIDscan</h1>
+                        <p class="g-font-size-20--xs g-font-size-24--md g-color--dark g-margin-b-0--xs">A fully automated AI tool for passengers to check safety measures before they travels,Mask safety check, Gloves safety check for Passenger and assist Passenger to determine COVID-19 through temperature with high accuracy.</p>
+                    </div>
+                    <span class="g-display-block--xs g-display-inline-block--lg g-margin-b-10--xs g-margin-b-0--lg">
+                        <a href="/IDs_scan" class="text-uppercase g-width-200--xs btn-block s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-50--xs g-margin-b-20--xs">
+                            <span class="g-display-block--xs g-font-size-13--xs">Start</span>
+                        </a>
+                    </span>
+            </div>
+            <div class="col-md-6">
+                <img width="100%" src="{% static 'img/background/home5.png' %}" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="clearfix">
+        <div class="row g-row-col--0">
+                <div class="col-sm-4">
+                    <div class="g-text-center--xs g-padding-x-30--xs g-padding-x-50--lg g-padding-y-70--xs">
+                        <i class="g-display-block--xs g-font-size-40--sm g-color--primary g-margin-b-30--xs ti-id-badge"></i>
+{#                        <span class="g-display-block--xs g-font-size-13--sm g-letter-spacing--3 g-margin-b-25--xs">01</span>#}
+                        <h2 class="g-font-size-26--xs g-font-family--playfair">Passenger ID Scanner</h2>
+                        <p class="g-color--dark">For quick help, any passenger should scan their ID in order to use Transportation Facilities’ all the data are kept Secrete.</p>
+                        <a href="/IDs_scan" class="g-width-150--xs text-uppercase s-btn s-btn--xs s-btn--primary-brd g-radius--50 g-margin-t-20--xs">Scan ID</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="g-bg-color--sky-light g-text-center--xs g-padding-x-30--xs g-padding-x-50--lg g-padding-y-70--xs">
+                        <i class="g-display-block--xs g-font-size-40--sm g-color--primary g-margin-b-30--xs ti-check-box"></i>
+{#                        <span class="g-display-block--xs g-font-size-13--sm g-letter-spacing--3 g-margin-b-25--xs">02</span>#}
+                        <h2 class="g-font-size-26--xs g-font-family--playfair">Mask Safety Check</h2>
+                        <p class="g-color--dark">Due to government’ strict guidelines in mask usage, especially during this COVID-19 outbreak, the application will automate the mask testing of the passengers to minimize the exposure of the disease.</p>
+                        <a href="/mask_scan" class="g-width-150--xs text-uppercase s-btn s-btn--xs s-btn--primary-brd g-radius--50 g-margin-t-20--xs">Mask scan</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="g-text-center--xs g-padding-x-30--xs g-padding-x-50--lg g-padding-y-70--xs">
+                        <i class="g-display-block--xs g-font-size-40--sm g-color--primary g-margin-b-30--xs ti-check-box"></i>
+{#                        <span class="g-display-block--xs g-font-size-13--sm g-letter-spacing--3 g-margin-b-25--xs">03</span>#}
+                        <h2 class="g-font-size-26--xs g-font-family--playfair">Gloves Safty Check</h2>
+                        <p class="g-color--dark">Also government have guidelines in gloves usage, especially during this COVID-19 outbreak, the application will automate the Gloves testing of the passengers to minimize the exposure of the COVID-19.</p>
+                        <a href="/glove_scan" class="g-width-150--xs text-uppercase s-btn s-btn--xs s-btn--primary-brd g-radius--50 g-margin-t-20--xs">Glove scan</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Parallax -->
+    <div class="s-promo-block-v2 g-bg-position--center js__parallax-window" style="background: url({% static 'img/1.png' %}) 50% 0 no-repeat fixed;">
+        <div class="g-container--md g-text-center--xs g-padding-y-80--xs g-padding-y-80--sm">
+
+            <h3 class="g-font-size-35--xs g-font-size-45--sm g-color--white g-font-weight--600">COVID-19 - A Worldwide Pandemic</h3>
+
+            <p class="g-font-size-20--xs g-color--white">According to live update from WHO, COVID-19, previously known as the novel Coronavirus, has killed more than 775 581 peoples across the world and infected over 21 938 171 peoples in 215 countries.This number is continuing to grow every day. In the United States, the COVID has been spreading rapidly in compare with other countries.However,corona virus vaccine got approved in Russia and China but this remain as epidemic in most of the small countries.Therefore such AI system is very important to control the outbreak of COVID-19.</p>
+
+            <a href="/about" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Read More</a>
+        </div>
+    </div>
+    <!-- End Parallax -->
+
+
+
+
+        <!--========== END PROMO BLOCK ==========-->
+{% include 'footer.html' %}
+{% include 'scripts.html' %}
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+</head>
+{% include 'head.html' %}
+<body>
+{% include 'navbar.html' %}
+{% load static %}
+<div class="g-bg-position--center g-bg-color--white">
+    <div class="g-container--md g-text-center--xs g-padding-y-20--xs g-margin-t-100--xs">
+        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs">PassengerCOVIDscan</p>
+        <h1 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--primary g-letter-spacing--1">About</h1>
+    </div>
+</div>
+<!-- Services -->
+    <div class="container g-padding-y-0--xs">
+        <div class="row">
+            <div class="col-md-5 g-margin-b-10--xs g-margin-b-0--lg">
+                <div class="g-margin-b-30--xs">
+                    <p class="g-color--dark-light g-font-size-16--xs">In the sense of WHO, Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness. </p>
+                    <p class="g-color--dark-light g-font-size-16--xs"><b>To prevent infection and to slow transmission of COVID-19, do the following:</p> <br>
+
+1)Wash your hands regularly with soap and water, or clean them with alcohol-based hand rub.<br>
+2)Maintain at least 1 metre distance between you and people coughing or sneezing.<br>
+3)Avoid touching your face.<br>
+4)Cover your mouth and nose when coughing or sneezing.<br>
+5)Stay home if you feel unwell.<br>
+6)Refrain from smoking and other activities that weaken the lungs.<br>
+7)Practice physical distancing by avoiding unnecessary travel and staying away from large groups of people.</b></p>
+                </div>
+            </div>
+            <div class="col-md-6 g-margin-t-30--xs g-margin-b-60--xs g-margin-b-0--lg">
+                <!-- Masonry Grid -->
+                <div class="row g-row-col--5 g-overflow--hidden js__masonry">
+{#                        <div class="col-xs-6 js__masonry-sizer"></div>#}
+                    <div class="col-xs-6 g-full-width--xs g-margin-b-10--xs g-margin-b-0--sm js__masonry-item">
+                        <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".1s">
+                            <img class="img-responsive" src="{% static 'img/5.jpg' %}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 g-full-width--xs g-margin-b-10--xs js__masonry-item">
+                        <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".3s">
+                            <img class="img-responsive" src="{% static 'img/4.jpg' %}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-xs-6 g-full-width--xs js__masonry-item">
+                        <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".5s">
+                            <img class="img-responsive" src="{% static 'img/6.png' %}" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Masonry Grid -->
+            </div>
+            <div class="col-md-12 g-margin-b-30--xs g-margin-b-40--lg">
+                <h4>The best way</h4>
+                <p class="g-color--dark-light g-font-size-16--xs">With the people expectations of timely destination and for daily work in mind, the cutting edge technology of deep learning such as computer vision can be used to speed up people living style wait time for transportation; people with positive cases needs appropriate care sooner and keep them away from others for further contamination, especially in this critical time of the COVID-19 pandemic. <span class="g-color--primary">PassengerCOVIDscan</span> is a application with an integrated machine learning model where it checks the passenger safety through camera with high accuracy.</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Services -->
+
+{% include 'footer.html' %}
+{% include 'scripts.html' %}
+</body>
+</html>

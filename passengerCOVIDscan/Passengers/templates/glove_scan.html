@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ title }}</title>
+</head>
+{% load static %}
+{% include 'head.html' %}
+<body>
+{% include 'navbar.html' %}
+
+
+<!--========== PROMO BLOCK ==========-->
+
+
+<div class="s-promo-block-v1">
+
+    <div class="g-container--md g-text-center--xs g-margin-t-120--xs">
+        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs">PassengerCOVIDscan</p>
+        <h1 class="g-font-size-40--xs g-font-size-50--sm g-color--primary g-letter-spacing--1">Gloves Scan</h1>
+    </div>
+
+    <div class="container g-padding-y-40--xs g-padding-y-50--md">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img width="100%" src="{% static 'img/background/glovess.svg' %}" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 g-hor-centered-row__col">
+                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                    <div class="center-block g-bg-color--white g-box-shadow__blueviolet-v1 g-padding-x-40--xs g-padding-y-30--xs g-radius--4">
+                        <div class="g-margin-b-30--xs g-margin-t-20--xs">
+                           <p class="g-text-center--xs">Configure the camera to start the automate GLOVES testing of the passenger to minimize the exposure of the disease.</p>
+                            <div class="message g-font-size-16--xs g-color--primary g-margin-t-10--xs"></div>
+                            <select class="form-control s-form-v4__input" id="videoSource"></select>
+                        </div>
+                        <div id="glove_results" style="display: none" class="g-padding-y-10--xs g-text-center--xs">
+                            <h1 class="g-font-size-30--xs g-color--primary g-letter-spacing--1"></h1>
+                            <p class="user g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs"></p>
+                        </div>
+                        <div id="canvas_container" class="">
+                            <div class="video-field">
+{#                                <video id="video" muted autoplay></video>#}
+                            </div>
+                            <canvas id="canvas" class="drawingBuffer g-bg-color--sky-light g-margin-b-10--xs"></canvas>
+                            <br clear="all">
+                        </div>
+                        <div class="g-text-center--xs g-bg-color--dark-light g-padding-y-15--xs g-radius--3">
+                            <button id="startButtonGlove" class="g-width-100--xs text-uppercase s-btn s-btn--xs s-btn--white-bg g-radius--10 g-margin-r-5--xs"><i class="ti-video-camera g-margin-r-5--xs"></i> <span>Start</span></button>
+                            <button id="stopButton" class="g-width-100--xs text-uppercase s-btn s-btn--xs s-btn--white-bg g-radius--10"><i class="ti-control-stop g-margin-r-5--xs"></i> <span>Stop</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="results" class="g-padding-y-60--xs">
+    <div class="s-promo-block-v1">
+        <div class="g-bg-position--center g-bg-color--white">
+            <div class="g-container--md g-text-center--xs g-padding-y-20--xs">
+                <h1 class="g-font-size-40--xs g-font-size-50--sm g-color--primary g-letter-spacing--1">glove Results</h1>
+                <p id="#result_strip"  class="user g-font-size-14--xs g-font-weight--700 g-color--dark g-letter-spacing--2 g-margin-b-25--xs">
+                </p>
+            </div>
+        </div>
+        <div class="container g-padding-y-20--xs">
+            <div class="row">
+                <div class="text-center">Proceed to next step <br>
+                    <a href="/IDs_scan" class="g-width-150--xs text-uppercase s-btn s-btn--xs s-btn--primary-brd g-radius--50 g-margin-t-20--xs">IDs scan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--========== END PROMO BLOCK ==========-->
+{% include 'footer.html' %}
+{% include 'scripts.html' %}
+<script src="{% static 'js/containerAdjust.js' %}"></script>
+<script src="{% static 'js/form.js' %}"></script>
+<script src="{% static 'js/ppe.js' %}"></script>
+<script src="{% static 'js/glove.js' %}"></script>
+<script src="{% static 'js/utils.js' %}"></script>
+<script src="{% static 'js/operate.js' %}"></script>
+
+
+</body>
+</html>
